@@ -17,6 +17,7 @@ module.exports = env => {
 	return {
 		entry: {
 			FirstComp: './assets/js/components/FirstComp.js',
+			secondComp: './assets/js/components/secondComp.js',
 			main: './assets/js/main.js'
 		},
 		output: {
