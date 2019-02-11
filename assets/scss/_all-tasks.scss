@@ -62,8 +62,27 @@
             padding: 20px;
             border-bottom: 2px solid #d1d1d1; // #d1d1d1
             margin: 0 0 20px 0;
+            background: white; ///
+            position: relative;
             .title{
-
+              color: black;
+              margin:0 0 15px 0;
+              font-size: 24px;
+            }
+            .date{
+              color: #ababab;
+              font-size: 14px;
+            }
+            .check-box{
+              padding: 2px;
+              border-radius: 10px;
+              border: 3px solid darkBlue;
+              display: inline-block;
+              position: absolute;
+              top: 25px;
+              right: 25px;
+              font-size: 32px;
+              color: $darkBlue;
             }
         }
       }
@@ -78,7 +97,7 @@
     // margin: 0 230px 0 230px ;
     margin: 0 auto;
     //background: green;
-     background: white; //******####$$$<-------
+    // background: white; //******####$$$<-------
 
   }
   
