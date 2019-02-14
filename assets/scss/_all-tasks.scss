@@ -1,5 +1,7 @@
 #all-tasks{
 
+
+
     .header {
       background: 
       url("https://static.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg")
@@ -55,6 +57,7 @@
     .content-area {
       color: red;
       width: 100%;
+      // overflow: auto;
       .tasks-container{
         
           margin: 40px 0;
@@ -96,6 +99,26 @@
       width: 100%;
       color: $white;
       padding: 50px 0;
+      transform: translate(0, 100%);
+      transition: all 0.6s ease-in-out;
+
+      &.active{
+        transform: translate(0, 0);
+      }
+      //  height: 100%;
+      // height: 100vh;
+      // overflow: auto;
+
+      .close-btn{
+         position: absolute;
+        top: 35px;
+        right: 35px;
+        padding: 15px;
+        cursor: pointer;
+        .fas, .fa-times{
+          font-size: 36px;
+        }
+      }
       form{
         display: block;
         max-width: 500px;
@@ -108,15 +131,18 @@
         font-size: 36px;
         text-align: center;
       }
+      .form-group{
+        margin-bottom: 20px;
+      }
       label{
         font-family: 'Roboto', cursive;
         font-weight: 300;
-        font-size: 36px;
+        font-size: 24px;
         display: block;
-        text-transform: uppercase;
+        text-transform: capitalize;
         margin: 0 0 15px 0;
       }
-      input[type="text"]{
+      input[type="text"], textarea{
         width: 100%;
         background: rgba(255,255,255,.1);
         border: none;
@@ -129,6 +155,20 @@
           border: none;
           outline: none;
         }
+      }
+
+      textarea{
+        height: 250px;
+      }
+
+      button{
+        background: $lightBlue; 
+        padding: 15px 20px;
+        border: none;
+        width: 100%;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $white;
       }
     }
   }

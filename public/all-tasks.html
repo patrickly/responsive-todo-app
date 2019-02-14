@@ -59,10 +59,28 @@
     </section>
 
     <section class="task-form">
+      <div class="close-btn">
+        <i class="fas fa-times"></i>
+      </div>
       <form>
         <h3>Add a task</h3>
-        <label>Title</label>
-        <input type="text">
+
+        <div class="form-group">
+          <label for="title">Title: </label>
+          <input type="text" name="title">
+        </div>
+        <div class="form-group">
+          <label for="title">Category: </label>
+          <input type="text" name="title">
+        </div>
+        <div class="form-group">
+          <label for="title">Notes: </label>
+          <textarea name="notes"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Add New Task</button>
+        </div>
+
       </form>
     </section>
   </div>
@@ -78,11 +96,11 @@
     //   });
     // });
 
-    $(document).ready(function () {
-      $(".add-circle").on("click", function () {
-        console.log("show me the popup");
-      });
-    });
+    // $(document).ready(function () {
+    //   $(".add-circle").on("click", function () {
+    //     console.log("show me the popup");
+    //   });
+    // });
   </script>
 
   </script>
