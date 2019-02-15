@@ -186,23 +186,40 @@
 
     //Laptop
     @media screen and (min-width: 1200px)  and (max-width: 1300px){
-      #all-tasks {
-        background-color: blue;
-      }
+
     }
 
   
 
   //Tablets
   @media screen and (max-width: 1199px) {
-    #all-tasks {
-      background-color: red;
-    }
+
   }
 
   //PHONES
   @media screen and (max-width: 767px) {
-    #all-tasks {
-      background-color: lightgreen;
-    }
+    #all-tasks     {
+
+      .header{
+        .top{
+          .tasks-total{
+            .task {
+              .number{
+                
+              }
+            }
+          }
+        }
+      }
+      color: #9787EE;
+      font-weight: 100;
+      font-size: 24px;
+      margin: 0 10px 0 0;
+      position: relative;
+      top: 3px;
   }
+  }
+
+
+
+  
