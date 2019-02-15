@@ -183,9 +183,26 @@
 
   }
 
-  @media screen and (min-width: 500px) {
+
+    //Laptop
+    @media screen and (min-width: 1200px)  and (max-width: 1300px){
+      #all-tasks {
+        background-color: blue;
+      }
+    }
+
+  
+
+  //Tablets
+  @media screen and (max-width: 1199px) {
+    #all-tasks {
+      background-color: red;
+    }
+  }
+
+  //PHONES
+  @media screen and (max-width: 767px) {
     #all-tasks {
       background-color: lightgreen;
     }
   }
-  
