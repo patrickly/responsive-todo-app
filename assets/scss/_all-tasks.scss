@@ -198,27 +198,38 @@
 
   //PHONES
   @media screen and (max-width: 767px) {
-    #all-tasks     {
-
+    #all-tasks{
       .header{
+        .add-circle {
+          background: black;
+          border-radius: 50%;
+          position: absolute;
+          top: 112px;
+          right: 25px;
+          padding: 10px 10px;
+      }
+
         .top{
           .tasks-total{
+            top: 0;
             .task {
+              display: block;
               .number{
-                
+                color: #9787EE;
+                font-weight: 500;
+                font-size: 24px;
+                margin: 0 10px 0 0;
+                position: relative;
+                top: 3px;
               }
             }
           }
         }
-      }
-      color: #9787EE;
-      font-weight: 100;
-      font-size: 24px;
-      margin: 0 10px 0 0;
-      position: relative;
-      top: 3px;
-  }
-  }
+     }
+   }
+}
+
+
 
 
 
